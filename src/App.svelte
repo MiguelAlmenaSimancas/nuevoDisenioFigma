@@ -22,7 +22,7 @@
 <style>
     .container {
         display: flex;
-        height: 100vh;
+        height: 100vh; 
         width: 100%;
     }
     .images-section {
@@ -30,13 +30,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #f9f9f9;
     }
     .form-section {
         width: 50%;
-        background-color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #fff;
     }
 </style>

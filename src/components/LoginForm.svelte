@@ -5,7 +5,6 @@
 
 <div class="login-form">
     <h1>Iniciar Sesión</h1>
-    <h3>Bienvenido de nuevo</h3>
     <input type="email" bind:value={email} placeholder="Correo electrónico" />
     <input type="password" bind:value={password} placeholder="Contraseña" />
     <button>Iniciar Sesión</button>
@@ -20,10 +19,12 @@
         align-items: center;
         gap: 10px;
         padding: 20px;
-        height: 100%;
+        height: 450px;
+        border-radius: 18px;
+        background-color: #EDEBD7;
     }
     input {
-        width: 80%;
+        width: 300px;
         padding: 10px;
         margin: 5px 0;
         border: 1px solid #ccc;
@@ -31,17 +32,21 @@
     }
     button {
         padding: 10px 20px;
-        background-color: #007BFF;
+        background-color: #6E675F;
         color: white;
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        margin-top: 40px;
     }
     p {
         font-size: 0.9rem;
     }
     a {
-        color: #007BFF;
-        text-decoration: none;
+        color: black;
+        text-decoration: solid;
+    }
+    h1{
+        margin-bottom: 60px;
     }
 </style>

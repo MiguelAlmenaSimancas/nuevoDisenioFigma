@@ -11,15 +11,16 @@
 <style>
     .image-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        width: 100%;
-        height: 100%;
+        grid-template-columns: repeat(2, 250px);
+        width: 500px;
+        height: 700px;
+        margin: 0;
+        padding: 0;
     }
     img {
-        width: 100%;
-        height: 100%;
+        width: 250px;
+        height: 350px;
         object-fit: cover;
-        border-radius: 8px;
+        margin: 0;
     }
 </style>
