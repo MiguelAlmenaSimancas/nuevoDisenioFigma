@@ -4,7 +4,8 @@
 </script>
 
 <div class="login-form">
-    <h1>Iniciar Sesión</h1>
+    <h1>Unique Football</h1>
+    <h2>Iniciar Sesión</h2>
     <input type="email" bind:value={email} placeholder="Correo electrónico" />
     <input type="password" bind:value={password} placeholder="Contraseña" />
     <button>Iniciar Sesión</button>
@@ -46,7 +47,5 @@
         color: black;
         text-decoration: solid;
     }
-    h1{
-        margin-bottom: 60px;
-    }
+
 </style>

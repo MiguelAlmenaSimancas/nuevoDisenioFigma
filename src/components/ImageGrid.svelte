@@ -16,6 +16,7 @@
         height: 700px;
         margin: 0;
         padding: 0;
+        overflow: hidden;
     }
     img {
         width: 250px;
