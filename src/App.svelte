@@ -1,30 +1,42 @@
 <script>
-	export let name;
+    import ImageGrid from './components/ImageGrid.svelte';
+    import LoginForm from './components/LoginForm.svelte';
+
+    const images = [
+        '/images/image1.jpeg',
+        '/images/image2.jpeg',
+        '/images/image3.jpeg',
+        '/images/image4.jpeg'
+    ];
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+<div class="container">
+    <div class="images-section">
+        <ImageGrid {images} />
+    </div>
+    <div class="form-section">
+        <LoginForm />
+    </div>
+</div>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+    .container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+    }
+    .images-section {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9f9f9;
+    }
+    .form-section {
+        width: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
