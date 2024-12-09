@@ -1,6 +1,7 @@
 <script>
     let email = '';
     let password = '';
+    import LoginButton from "./LoginButton.svelte";
 </script>
 
 <div class="login-form">
@@ -8,7 +9,7 @@
     <h2>Iniciar Sesión</h2>
     <input type="email" bind:value={email} placeholder="Correo electrónico" />
     <input type="password" bind:value={password} placeholder="Contraseña" />
-    <button>Iniciar Sesión</button>
+    <LoginButton />
     <p>¿No tienes cuenta? <a href="#">Créate una</a></p>
 </div>
 
