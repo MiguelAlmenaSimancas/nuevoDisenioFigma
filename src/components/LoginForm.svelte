@@ -5,12 +5,11 @@
 </script>
 
 <div class="login-form">
-    <h1>Unique Football</h1>
-    <h2>Iniciar Sesión</h2>
-    <input type="email" bind:value={email} placeholder="Correo electrónico" />
-    <input type="password" bind:value={password} placeholder="Contraseña" />
+    <h1>LOG IN👤</h1>
+    <input type="user" bind:value={email} placeholder="User Name" />
+    <input type="password" bind:value={password} placeholder="Password" />
     <LoginButton />
-    <p>¿No tienes cuenta? <a href="#">Créate una</a></p>
+    <p class="texto-crearcuenta">¿No tienes cuenta?<a href="#">Crear Cuenta</a></p>
 </div>
 
 <style>
@@ -23,25 +22,17 @@
         padding: 20px;
         height: 450px;
         border-radius: 18px;
-        background-color: #EDEBD7;
+        background-color: #ffffff;
     }
     input {
         width: 300px;
         padding: 10px;
         margin: 5px 0;
-        border: 1px solid #ccc;
+        border: 10px solid #ccc;
         border-radius: 5px;
     }
-    button {
-        padding: 10px 20px;
-        background-color: #6E675F;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 40px;
-    }
-    p {
+
+    .texto-crearcuenta {
         font-size: 0.9rem;
     }
     a {

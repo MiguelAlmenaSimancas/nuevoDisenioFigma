@@ -1,41 +1,42 @@
 <script>
-    import ImageGrid from './components/ImageGrid.svelte';
     import LoginForm from './components/LoginForm.svelte';
-
-    const images = [
-        '/images/image1.jpeg',
-        '/images/image2.jpeg',
-        '/images/image3.jpeg',
-        '/images/image4.jpeg'
-    ];
 </script>
+<body>
 
 <div class="container">
-    <div class="images-section">
-        <ImageGrid {images} />
-    </div>
+    <h1>Limited Football</h1>
     <div class="form-section">
+        <div class="imagen-logo">
+            <img src="public/images/luisaragones.png" alt="logo" class="logo-balon" />
+        </div>
         <LoginForm />
+        <div class="imagen-logo">
+            <img src="public/images/luisaragones.png" alt="logo" class="logo-balon" />
+        </div>
     </div>
 </div>
+</body>
 
 <style>
+
+    h1{
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
     .container {
         display: flex;
+        align-items: center;
+        flex-direction: column;
         height: 100vh; 
         width: 100%;
+        background-color: #5964a0;
     }
-    .images-section {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
     .form-section {
         width: 50%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        background-color: #fff;
     }
 </style>
