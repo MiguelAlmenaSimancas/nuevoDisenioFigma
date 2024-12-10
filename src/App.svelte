@@ -22,7 +22,7 @@
     h1{
         color: white;
         margin-top: 50px;
-        margin-bottom: 70px;
+        margin-bottom: 65px;
     }
     .container {
         display: flex;
