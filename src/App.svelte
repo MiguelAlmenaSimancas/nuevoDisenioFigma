@@ -1,17 +1,17 @@
 <script>
-    import LoginForm from './components/LoginForm.svelte';
+    import LoginForm from './components/LoginFormulario.svelte';
 </script>
 <body>
 
-<div class="container">
-    <h1>Limited Football</h1>
-    <div class="form-section">
+<div class="contenedor-principal">
+    <h1>-- Limited Football --</h1>
+    <div class="formulario-contenedor">
         <div class="imagen-logo">
-            <img src="public/images/luisaragones.png" alt="logo" class="logo-balon" />
+            <img src="images/balonLogo.png" alt="logo" class="logo-balon" />
         </div>
         <LoginForm />
         <div class="imagen-logo">
-            <img src="public/images/luisaragones.png" alt="logo" class="logo-balon" />
+            <img src="images/balonLogo.png" alt="logo" class="logo-balon" />
         </div>
     </div>
 </div>
@@ -24,7 +24,7 @@
         margin-top: 50px;
         margin-bottom: 65px;
     }
-    .container {
+    .contenedor-principal {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -33,10 +33,16 @@
         background-color: #5964a0;
     }
 
-    .form-section {
-        width: 50%;
+    .formulario-contenedor {
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        gap: 100px;
+
+    }
+    .logo-balon{
+        width: 200px;
+        height: 200px;
     }
 </style>

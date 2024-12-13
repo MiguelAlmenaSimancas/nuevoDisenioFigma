@@ -1,19 +1,19 @@
 <script>
     let email = '';
     let password = '';
-    import LoginButton from "./LoginButton.svelte";
+    import Boton from "./Boton.svelte";
 </script>
 
-<div class="login-form">
+<div class="login-formulario">
     <h1>LOG IN👤</h1>
     <input type="user" bind:value={email} placeholder="User Name" />
     <input type="password" bind:value={password} placeholder="Password" />
-    <LoginButton />
+    <Boton />
     <p class="texto-crearcuenta">¿No tienes cuenta?<a href="#">Crear Cuenta</a></p>
 </div>
 
 <style>
-    .login-form {
+    .login-formulario {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -36,7 +36,7 @@
         font-size: 0.9rem;
     }
     a {
-        color: black;
+        color: rgb(0, 132, 255);
         text-decoration: solid;
     }
 
